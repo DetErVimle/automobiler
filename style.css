@@ -1,0 +1,770 @@
+/* 
+Theme Name: am-automobiler
+Text Domain: am-automobiler
+Version: 1.0
+Description: Custom theme for am-automobiler. 3rd Semester Exam
+Tags: responsive, custom Theme
+Author: Peter Winston
+Author URI: https://wiinston.dk 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+.mobile-f-social {
+  display: none;  
+}
+
+
+@media only screen and (min-width: 768px) {
+  .hide-d {
+    display: none;
+  }
+
+  .logo img.custom-logo {
+    width: 100%;
+    height: 100%; 
+  }
+
+/* CUSTOM FORM */
+
+
+.wpforms-form {
+  background-color: #1f1f1f;
+  width: 50%;
+  margin: auto auto;
+  padding: 5%;
+  margin-top: 5%;
+}
+
+.wpforms-submit .form-submit-btn {
+  background-color: crimson !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+  background-color: crimson !important;
+  border-color: crimson !important;
+  color: white;
+  width: 25%;
+}
+
+  .main-wrapper {
+    width: 100%;
+    background-color: #000000;
+  }
+
+  /* HEADER */
+  .info-nav {
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    display: flex;
+  }
+
+  .info-nav div {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+  }
+
+  .social a {
+    padding-right: 15px;
+    color: white;
+    font-size: 32px;
+  }
+
+  .phone {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+
+  .main-nav {
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .main-nav ul {
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    width: 70%;
+  }
+
+  .main-nav ul li {
+    padding: 15px;
+    text-transform: uppercase;
+    width: 25%;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+  }
+
+  .main-nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* FOOTER ************ LAV FOOTER OM! */
+  footer {
+    color: white;
+    background-color: #000000;
+  }
+
+  footer p {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .footer-wrap {
+    width: 100%;
+    margin: auto auto;
+    display: flex;
+    background-color: #1f1f1f;
+    justify-content: center;
+  }
+
+  .footer-wrap div {
+    width: 25%;
+    display: flex;
+    line-height: 28px;
+    justify-content: center;
+    padding: 35px 0 35px 0;
+  }
+
+  .footer-wrap div ul li {
+    list-style: none;
+  }
+
+  .f-contact {
+    flex-direction: column;
+  }
+
+  .f-contact div {
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: column;
+  }
+
+  .footer-wrap .f-social {
+    justify-content: center;
+  }
+
+  .footer-wrap .f-social a  {
+    align-self: flex-end;
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-wrap .f-social a i {
+    display: flex;
+    align-self: flex-end;
+    font-size: 34px;
+    padding: 10px;
+  }
+
+  .f-hours {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .f-hours div {
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: column;
+  }
+
+  /* FRONTPAGE */
+  .partners {
+    width: 100%;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    padding: 40px 0 40px 0;
+  }
+
+  .partners h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px 0 50px 0;
+  }
+
+  .partners div {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto auto;
+    /* background-color: #ffffff; */
+  }
+
+  .partners div div {
+    margin: auto auto;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .partners div div img {
+    width: 70%;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+
+  .front-info {
+    display: flex;
+    background-color: #1f1f1f;
+    width: 80%;
+    margin: auto auto;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+    margin-bottom: 50px;
+  }
+
+  .front-info div {
+    width: 50%;
+    color: white;
+  }
+
+  .front-info div:nth-child(1) {
+    padding-bottom: 40px;
+  }
+
+  .front-info div:nth-child(2) {
+    display: flex;
+  }
+
+  .front-info div img {
+    margin: auto auto;
+    width: 45%;
+  }
+
+  .front-info div h2 {
+    width: 70%;
+    border-bottom: 1px solid crimson;
+    margin-left: 12%;
+    box-sizing: border-box;
+    padding: 40px 10px 10px 10px;
+  }
+
+  .front-info div ul {
+    padding-top: 10px;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .front-info div ul li {
+    font-size: 18px;
+    line-height: 44px;
+  }
+
+  /* GOOGLE MAPS */
+  .mapouter {
+    margin-top: 50px;
+    background-color: black;
+  }
+
+  /****** BACKGROUND VIDEO ******/
+  .video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 72px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .video-background-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  /* PAGE */
+
+  .main-content {
+    background-color: #1f1f1f;
+    color: white;
+    width: 70%;
+    margin: auto auto;
+    margin-top: 10vh;
+    padding-bottom: 60px;
+  }
+
+  .page-title {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 15vh;
+    text-transform: uppercase;
+  }
+
+  .main-content div {
+    padding: 60px 30px 0px 30px;
+  }
+
+  .main-content div h2 {
+    padding-bottom: 10px;
+  }
+
+  .main-content div p {
+    border-top: 1px solid crimson;
+    padding: 20px 0px 0 0px;
+    line-height: 28px;
+  }
+
+
+  .finans-info {
+    display: flex;
+    background-color: #1f1f1f;
+    width: 70%;
+    margin: auto auto;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+    margin-bottom: 50px;
+  }
+
+  .finans-info div {
+    width: 50%;
+  }
+
+  .finans-info div h2 {
+    color: white;
+    width: 80%;
+    margin: auto auto;
+    padding-bottom: 5%;
+  }
+
+  .finans-info div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .finans-info div img {
+    width: 50%;
+    margin: auto auto;
+  }
+
+  .finans-info div p {
+    color: white;
+    width: 80%;
+    margin: auto auto;
+    line-height: 28px;
+  }
+
+  
+
+  /* CONTACT */
+
+  .contact-form {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hide-m {
+    display: none;
+  }
+
+  .logo img.custom-logo {
+    width: 100%;
+    height: 100%; 
+  }
+
+  .dropdown {
+    width: 100%;
+    padding: 0;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    padding-top: 4%;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  #myLinks {
+    background-color: crimson;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #myLinks ul {
+    padding: 10px;
+  }
+
+  #myLinks ul li {
+    padding: 15px;
+    border-bottom: 0.1px solid #d1d1d1;
+  }
+
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 7%;
+    margin-right: 7%;
+    font-size: 26px;
+  }
+
+  .topnav a:hover {
+    color: white;
+  }
+
+  .main-wrapper {
+    width: 100%;
+    background-color: #000000;
+  }
+
+/* HEADER */
+  .info-nav {
+    width: 100%;
+    color: white;
+    display: flex;
+  }
+
+  .info-nav div {
+    box-sizing: border-box;
+    /* padding: 10px; */
+    width: 100%;
+  }
+
+  .info-nav div img {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .social a {
+    padding-right: 15px;
+    color: white;
+    font-size: 32px;
+  }
+
+  .phone {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+
+  .main-nav {
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .main-nav ul {
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    width: 70%;
+  }
+
+  .main-nav ul li {
+    padding: 15px;
+    text-transform: uppercase;
+    width: 25%;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+  }
+
+  .main-nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* FOOTER ************ LAV FOOTER OM! */
+
+  footer {
+    color: white;
+    background-color: #000000;
+  }
+
+  footer p {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .footer-wrap {
+    width: 100%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    justify-content: center;
+  }
+
+  .footer-wrap div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    justify-content: center;
+    padding: 35px 0 0px 0;
+  }
+
+  .footer-wrap div ul li {
+    list-style: none;
+  }
+
+  .f-contact div {
+    width: 80%;
+    margin: auto auto;
+    flex-direction: column;
+  }
+
+  .footer-wrap .f-social {
+    display: none;
+  }
+
+  .footer-wrap .mobile-f-social {
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 5%;
+  }
+
+  .footer-wrap .mobile-f-social i {
+    display: flex;
+    align-self: flex-end;
+    font-size: 34px;
+    padding: 10px;
+    color: crimson;
+
+  }
+
+  .f-hours div {
+    width: 80%;
+    margin: auto auto;
+    flex-direction: column;
+  }
+
+  /* FRONTPAGE */
+  .partners {
+    width: 100%;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    padding: 40px 0 40px 0;
+  }
+
+  .partners h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px 0 50px 0;
+  }
+
+  .partners div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto auto;
+  }
+
+  .partners div div {
+    margin: auto auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .partners div div img {
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+    margin: auto auto;
+  }
+
+  .front-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    width: 100%;
+    margin: auto auto;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+  }
+
+  .front-info div {
+    width: 100%;
+    color: white;
+  }
+
+  .front-info div:nth-child(1) {
+    padding-bottom: 40px;
+  }
+
+  .front-info div:nth-child(2) {
+    display: flex;
+  }
+
+  .front-info div img {
+    margin: auto auto;
+    width: 45%;
+  }
+
+  .front-info div h2 {
+    width: 70%;
+    border-bottom: 1px solid crimson;
+    margin-left: 12%;
+    box-sizing: border-box;
+    padding: 40px 10px 10px 10px;
+  }
+
+  .front-info div ul {
+    padding-top: 10px;
+    width: 80%;
+    margin: auto auto;
+  }
+
+  .front-info div ul li {
+    padding-bottom: 15px;
+    line-height: 28px;
+  }
+
+  /* GOOGLE MAPS */
+  .mapouter {
+    margin-top: 50px;
+    background-color: black;
+  }
+
+  /****** BACKGROUND VIDEO ******/
+  .video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 72px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .video-background-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  /* PAGE */
+  .main-content {
+    background-color: #1f1f1f;
+    color: white;
+    width: 95%;
+    margin: auto auto;
+    margin-top: 10vh;
+    padding-bottom: 60px;
+  }
+
+  .page-title {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    text-transform: uppercase;
+  }
+
+  .main-content div {
+    padding: 60px 30px 0px 30px;
+  }
+
+  .main-content div h2 {
+    padding-bottom: 10px;
+  }
+
+  .main-content div p {
+    border-top: 1px solid crimson;
+    padding: 20px 0px 0 0px;
+    line-height: 28px;
+  }
+
+  /* CONTACT */
+
+  .contact-form {
+    color: white;
+  }
+}
